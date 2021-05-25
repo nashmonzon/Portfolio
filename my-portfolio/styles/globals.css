@@ -1,0 +1,52 @@
+html,
+body {
+
+  font-family:  Ubuntu,  sans-serif;
+  background: #2e2e35;
+  
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.primaryColor {
+  color: #d1d9d9
+}
+
+.backColorTop {
+  background-color: #536162;
+}
+
+/* .contenedor{
+  
+  background-color: #2e2e35;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+ } */ 
+/* .contenedorInt{
+  padding: 10px; 
+  width: 90%;
+  margin: auto;
+} */
+
+.row {
+flex-direction: row;
+}
+
+.container{
+  background: #2e2e35 ;
+  margin:0;
+  padding: 10px;
+
+}
