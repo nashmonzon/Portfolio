@@ -1,3 +1,4 @@
+import NavBar from "./NavBar"
 import Navbar from "./NavBar"
 
 
@@ -7,9 +8,9 @@ export default function Layout  ({ children }) {
     <>
     
     
-        <main >
+        <main  className="backColorTop ">
+           <NavBar/>
             {children}
-
         </main>
     </>
     )

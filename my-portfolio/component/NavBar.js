@@ -2,7 +2,7 @@ import Link from "next/Link"
 
 const NavBar = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar navbar-expand-lg navbar-dark ">
             <div className="container">
                 <Link href="/">
                 <a className="navbar-brand" >My portfolio</a>
@@ -11,7 +11,7 @@ const NavBar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
-                    <div className="navbar-nav">
+                    <div className="navbar-nav navBar ">
                         <Link href="/galeria">
                         <a className="nav-link " >Galeria </a>
                         </Link>

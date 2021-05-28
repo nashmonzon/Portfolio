@@ -1,6 +1,5 @@
 html,
 body {
-
   font-family:  Ubuntu,  sans-serif;
   background: #2e2e35;
   
@@ -22,31 +21,111 @@ a {
 }
 
 .backColorTop {
-  background-color: #536162;
+  background: #2e2e35;
 }
 
-/* .contenedor{
+
+.container2{
+  background: #34343b;
+  width: 100%;
+  padding-right: 90px;
+  padding-left: 90px;
+  margin-right: auto;
+  margin-left: auto;
+ text-align: center;
   
-  background-color: #2e2e35;
+}
+
+.containerTop {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
- } */ 
-/* .contenedorInt{
-  padding: 10px; 
-  width: 90%;
-  margin: auto;
-} */
-
-.row {
-flex-direction: row;
+   
+  margin: 120px auto 0px auto;
 }
 
-.container{
-  background: #2e2e35 ;
-  margin:0;
-  padding: 10px;
+.containerMid {
+  
+  
+  width: 100%;
+  padding: 10px 10px 0px 10px;
+  margin-top: 50px;
+}
+
+.foto{
+  text-align: center;
+  
+}
+
+
+.colorSecundario{
+  color: #be0000
+}
+
+.name{
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60px;
+
+}
+
+.navBar{
+  margin-left: auto;
+}
+
+.intro{
+  padding-top:10px
+}
+
+.intro h2{
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.subtitulos{
+  font-size: 14px;
+        color: #be0000;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+}
+
+.proyectos{
+  display:block;
+  
+}
+
+.proyectosInt {
+  display:flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  text-align: left;
+  padding: 10px 20px;
+  margin-bottom: 50px;
+  max-height:auto;
+  /* justify-content: flex-start */
+  background:#303037;
+}
+
+.fotosDiv{
+  /* padding: 10px 0px 20px 45px; */
+  width: 502px;
+  height: 285px;
+  text-align: end;
+
+}
+
+.fotosDivL{
+  /* padding: 10px 0px 20px 45px; */
+  width: 502px;
+  height: 285px;
+  
+
+}
+
+.foteli{
+ 
+  height:inherit;
 
 }
