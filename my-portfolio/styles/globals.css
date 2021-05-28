@@ -59,7 +59,7 @@ a {
 
 
 .colorSecundario{
-  color: #be0000
+  color: #e4aa48
 }
 
 .name{
@@ -85,7 +85,7 @@ a {
 
 .subtitulos{
   font-size: 14px;
-        color: #be0000;
+        color:#e4aa48;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .12em;
@@ -99,13 +99,12 @@ a {
 .proyectosInt {
   display:flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   text-align: left;
   padding: 10px 20px;
   margin-bottom: 50px;
   max-height:auto;
-  /* justify-content: flex-start */
   background:#303037;
+  box-shadow: 10px 15px 25px rgba(228, 170, 72, 0.8);
 }
 
 .fotosDiv{
