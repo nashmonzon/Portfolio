@@ -1,6 +1,7 @@
 import Layout from "../component/Layout";
 import NavBar from "../component/NavBar";
 
+import Skill from "../component/skill/skill"
 
 export default function Home() {
   return (
@@ -55,15 +56,15 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="   proyectosInt">
-                      <div className="col-md-6 fotosDivL">
-                          <img src="casa.jpg" className="foteli " width="502px"  height="285px" ></img>
+                        <div className="col-md-6 fotosDivL">
+                          <img src="casa.jpg" className="foteli " width="502px" height="285px" ></img>
                         </div>
                         <div className="col-md-6 " >
 
                           <h1>nachooo</h1>
                           <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
-                        
+
                       </div>
                       <div className="   proyectosInt">
                         <div className="col-md-6 " >
@@ -72,7 +73,7 @@ export default function Home() {
                           <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                         </div>
                         <div className="col-md-6 fotosDiv">
-                          <img src="casa.jpg" className="foteli " width="502px"  height="285px" ></img>
+                          <img src="casa.jpg" className="foteli " width="502px" height="285px" ></img>
                         </div>
                       </div>
 
@@ -83,7 +84,22 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="container3">
+          <div className="row intro ">
+            <div className="col-md-12  ">
+              <div className=" primaryColor containerMid ">
+                <h6 className="subtitulos">skill</h6>
+                <h2 >Mis habilidades</h2>
+              </div>
+              <div >
+                <Skill>
+                </Skill>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+
 
     </Layout>
 

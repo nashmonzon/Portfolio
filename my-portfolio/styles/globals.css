@@ -35,13 +35,23 @@ a {
  text-align: center;
   
 }
+.container3{
+
+  width: 100%;
+  padding-right: 90px;
+  padding-left: 90px;
+  margin-right: auto;
+  margin-left: auto;
+ text-align: center;
+  
+}
 
 .containerTop {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-   
-  margin: 120px auto 0px auto;
+  padding-top: 100px; 
+  /* margin: 100px auto 0px auto; */
 }
 
 .containerMid {
@@ -104,7 +114,7 @@ a {
   margin-bottom: 50px;
   max-height:auto;
   background:#303037;
-  box-shadow: 10px 15px 25px rgba(228, 170, 72, 0.8);
+  box-shadow: 10px 15px 25px rgba(228, 170, 72, 0.3);
 }
 
 .fotosDiv{
@@ -127,4 +137,10 @@ a {
  
   height:inherit;
 
+}
+
+.skillContainer {
+ width: 80px;
+ height: 80px;
+ overflow:hidden
 }
