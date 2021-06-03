@@ -1,7 +1,8 @@
 import Layout from "../component/Layout";
 import NavBar from "../component/NavBar";
 
-import Skill from "../component/skill/skill"
+import Skill from "../component/skill.js"
+import Cards from "../component/Cards.js"
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
                   <div className="col-md-5 foto intro" >
                     <img src="adrie4.png" className="img-fluid " width="448" height="539" />
                   </div>
-                  <div className="col-md-4 intro">
+                  <div className="col-md-4 intro fullNone">
                     <h6 className="subtitulos">introduccion</h6>
                     <h2>Full Stack Web</h2>
                     <h2>Developer</h2>
@@ -34,7 +35,7 @@ export default function Home() {
           </div>
         </div>
         {/* midapp */}
-        <div className="container2 ">
+        {/* <div className="container2 ">
           <div className="row  ">
             <div className="col-md-12  ">
               <div className=" primaryColor containerMid ">
@@ -83,17 +84,21 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-        <div className="container3">
+        </div> */}
+        <Cards></Cards>
+        {/* <skillapp> */}
+        <div className="container">
           <div className="row intro ">
             <div className="col-md-12  ">
               <div className=" primaryColor containerMid ">
                 <h6 className="subtitulos">skill</h6>
                 <h2 >Mis habilidades</h2>
               </div>
-              <div >
-                <Skill>
+              <div className="skillContainer">
+                <Skill >
                 </Skill>
+
+
               </div>
             </div>
           </div>

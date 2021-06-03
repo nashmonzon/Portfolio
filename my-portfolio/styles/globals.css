@@ -2,7 +2,12 @@ html,
 body {
   font-family:  Ubuntu,  sans-serif;
   background: #2e2e35;
+  display: grid;
   
+}
+
+:root{
+  --gradient-color: linear-gradient(to right bottom, rgba(255,119,48,.8), rgba(255,185,0,.8))
 }
 
 a {
@@ -23,6 +28,11 @@ a {
 .backColorTop {
   background: #2e2e35;
 }
+
+.backColor{
+  background: #34343b;
+}
+
 
 
 .container2{
@@ -47,23 +57,24 @@ a {
 }
 
 .containerTop {
-  width: 100%;
+  /* width: 100%;
   padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 100px; 
+  padding-left: 15px; */
+  padding-top: 70px; 
   /* margin: 100px auto 0px auto; */
 }
 
 .containerMid {
   
-  
+  text-align: center;
   width: 100%;
-  padding: 10px 10px 0px 10px;
+  padding: 10px 10px 10px 10px;
   margin-top: 50px;
 }
 
 .foto{
   text-align: center;
+  align-self: flex-end;
   
 }
 
@@ -88,6 +99,17 @@ a {
 }
 
 .intro h2{
+  font-size: 35px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.intro2{
+  padding-top:10px;
+  text-align: center;
+}
+
+.intro2 h2{
   font-size: 35px;
   line-height: 45px;
   font-weight: 700;
@@ -118,7 +140,6 @@ a {
 }
 
 .fotosDiv{
-  /* padding: 10px 0px 20px 45px; */
   width: 502px;
   height: 285px;
   text-align: end;
@@ -126,21 +147,244 @@ a {
 }
 
 .fotosDivL{
-  /* padding: 10px 0px 20px 45px; */
   width: 502px;
   height: 285px;
-  
-
-}
+  }
 
 .foteli{
- 
   height:inherit;
+}
+
+/* skills */
+
+.skillContainerC {   
+  width: 80px;
+  height: 80px;
+  overflow:hidden;
+ 
+} 
+.skillContainer {   
+ 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  text-align: center;
+  justify-items: center;
+  padding-top: 10px;
+}
+
+.dad{
+  display:contents
+}
+
+/* card */
+
+
+
+.image-data{
+  height: 18rem;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.background-image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background:  center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  transition: transform 5s;
+}
+
+.card:hover .background-image{
+  transform: scale(1.1);
+}
+
+.skillUsadas {
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-color);
+  font-size: 1.4rem;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding:5px
 
 }
 
-.skillContainer {
- width: 80px;
- height: 80px;
- overflow:hidden
+.skillUsadas h2{
+  margin-right: 5rem;
 }
+.tecno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: all 2s;
+  font-weight: bold;
+  text-transform: capitalize;
+ 
+}
+/* 
+.tecno:hover{
+  color: rgba(255, 0, 255, 0.75)
+} */
+
+.post-data{
+  background-color: #34343b;
+  padding: 2rem 3rem ;
+  position: relative;
+}
+
+.title-app {
+  line-height: 1;
+}
+
+.description-app{
+  position: relative;
+}
+
+.description-app::first-letter{
+  margin-left: 1rem;
+}
+
+.description-app::before{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: .5rem;
+  height: 1.5rem;
+  background: var(--gradient-color);
+  border-radius: 2rem;
+}
+
+@media screen and (min-width: 600px){
+  .card.primaryColor  {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    /* box-shadow: 2px 8px 1px rgba(52, 52, 59,.9); */
+    margin-bottom: 20px;
+    background-color: #34343b;
+   }
+  .image-data{
+    flex-basis: 40%;
+  }
+
+  .post-data{
+    flex-basis: 60%;
+    background:#2D2D32;
+  }
+
+  .skillUsadas{
+    transform: translateX(-100%);
+    transition: transform .9s;
+  }
+
+  .card:hover .skillUsadas{
+    transform: translateX(0);
+  }
+
+  .tecno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: all 2s;
+    font-weight: bold;
+    text-transform: capitalize;
+    transform: translateY(15rem);
+    opacity: 1;
+  }
+
+  .card:hover .tecno {
+    transform: translateY(4rem);
+   }
+
+  .tarjetas{
+    overflow: hidden;
+  }
+  
+  .cardConteiner{
+    background: #34343b;
+  padding-top: 50px;
+  }
+  
+} 
+
+@media screen and (max-width: 600px) {
+  .card.primaryColor  {
+   
+    margin-bottom: 20px;
+    background-color: #34343b;
+   }
+
+  .post-data{
+     background:#2D2D32;
+  } 
+
+  .skillUsadas{
+    transform: translateX(-100%);
+    transition: transform .9s;
+  }
+
+  .card:hover .skillUsadas{
+    transform: translateX(0);
+  }
+
+  .tecno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    transition: all 2s;
+    font-weight: bold;
+    text-transform: capitalize;
+    transform: translateY(15rem);
+    opacity: 1;
+  }
+
+  .card:hover .tecno {
+    transform: translateY(5rem);
+  }
+
+  .cardConteiner{
+    background: #34343b;
+  padding-top: 50px;
+  }
+
+  .intro{
+    padding-top:10px;
+    text-align: center;
+    
+  }
+  
+  .intro h2{
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+  }
+  .tarjetas{
+    overflow: hidden;
+  }
+
+ 
+  .fullNone{
+    display: none
+  }
+
+}
+
+
