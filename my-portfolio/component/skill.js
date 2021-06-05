@@ -6,6 +6,7 @@ const Skill = () => {
     
 
     return (
+        
         <div className="dad">
             {
                 skills.map(({value, textColor,texto, img},i) => (

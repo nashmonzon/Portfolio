@@ -3,8 +3,13 @@ import NavBar from "../component/NavBar";
 
 import Skill from "../component/skill.js"
 import Cards from "../component/Cards.js"
+import Footer from "../component/Footer"
+
 
 export default function Home() {
+
+
+
   return (
     <Layout >
       {/* topapp */}
@@ -17,11 +22,24 @@ export default function Home() {
                   <div className="col-md-3 intro ">
                     <h1 className="name ">
                       Ignacio
-                  Monzon<span className="colorSecundario">.</span>
                     </h1>
+                    <h1 className="name ">
+                      Monzon<span className="colorSecundario">.</span></h1>
+                    <div className="dash"></div>
+                    <ul className="socialMedia">
+                      <a target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/ignmonzon">Linkedin</a>
+
+                      <a target="_blank" rel="noopener noreferrer" href="https://github.com/nashmonzon">GitHub </a>
+
+                      <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/ignmonzon"> Facebook</a>
+
+                    </ul>
+                    <div className="boton-area">
+                      <a className="boton">contactame</a>
+                    </div>
                   </div>
                   <div className="col-md-5 foto intro" >
-                    <img src="adrie4.png" className="img-fluid " width="448" height="539" />
+                    <img src="adrieeee.png" className="img-fluid " />
                   </div>
                   <div className="col-md-4 intro fullNone">
                     <h6 className="subtitulos">introduccion</h6>
@@ -35,74 +53,21 @@ export default function Home() {
           </div>
         </div>
         {/* midapp */}
-        {/* <div className="container2 ">
-          <div className="row  ">
-            <div className="col-md-12  ">
-              <div className=" primaryColor containerMid ">
-                <div className="row intro ">
-                  <h6 className="subtitulos">porfolio</h6>
-                  <h2 >Mis trabajos</h2>
-                  <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <div className="row">
-                    <div className="proyectos col-md-12">
-
-                      <div className="   proyectosInt">
-                        <div className="col-md-6 " >
-
-                          <h1>nachooo</h1>
-                          <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        </div>
-                        <div className="col-md-6 fotosDiv">
-                          <img src="casa.jpg" className="foteli " ></img>
-                        </div>
-                      </div>
-                      <div className="   proyectosInt">
-                        <div className="col-md-6 fotosDivL">
-                          <img src="casa.jpg" className="foteli " width="502px" height="285px" ></img>
-                        </div>
-                        <div className="col-md-6 " >
-
-                          <h1>nachooo</h1>
-                          <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        </div>
-
-                      </div>
-                      <div className="   proyectosInt">
-                        <div className="col-md-6 " >
-
-                          <h1>nachooo</h1>
-                          <p>orem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                        </div>
-                        <div className="col-md-6 fotosDiv">
-                          <img src="casa.jpg" className="foteli " width="502px" height="285px" ></img>
-                        </div>
-                      </div>
-
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
-        <Cards></Cards>
+        <Cards />
         {/* <skillapp> */}
         <div className="container">
           <div className="row intro ">
-            <div className="col-md-12  ">
-              <div className=" primaryColor containerMid ">
-                <h6 className="subtitulos">skill</h6>
-                <h2 >Mis habilidades</h2>
-              </div>
-              <div className="skillContainer">
-                <Skill >
-                </Skill>
-
-
-              </div>
+            <div className=" primaryColor containerMid ">
+              <h6 className="subtitulos">skill</h6>
+              <h2 >Mis habilidades</h2>
+            </div>
+            <div className="skillContainer">
+              <Skill />
             </div>
           </div>
         </div>
+        {/* footer */}
+        <Footer />
       </div>
 
 

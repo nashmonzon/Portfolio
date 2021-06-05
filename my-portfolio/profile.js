@@ -58,7 +58,9 @@ export const works = [
             {tecnos:"nodeJs"},
             {tecnos:"Javascript"},
             {tecnos:"materialUI"},
+            {tecnos:"ahiiiii"},
         ]
         
     }
+   
 ]
