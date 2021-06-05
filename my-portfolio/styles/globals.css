@@ -404,23 +404,94 @@ padding-top: 50px;
 
 .formulario{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   width: auto;
   height: 50%;
-  align-items: center;
+ 
+ color: white
  
 }
 
 .formularioInt{
   height: 50%;
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 10px 0 ;
+  color:#e4aa48;
+  font-weight: bold;
+  justify-content: right;
+}
+
+.formularioInt2{
+  height: 50%;
   width: 50%;
   display: inline-flex;
   flex-direction: column;
   margin: 10px 0 ;
-  color:red
+  color:#e4aa48;
+  font-weight: bold;
+  justify-content: right;
+  padding: 0px 10px;
+  background: #2e2e35;
 }
-
 .inputField{
   height: 30px;
+}
+
+.inputField2{
+  height: 70px;
+}
+
+.contactos{
+  width: 50%;
+  height: auto;
+  /* display:grid;
+  grid-template-columns: repeat(2, 50%);
+grid-template-rows: repeat(3, auto); */
+display: flex;
+flex-direction: column;
+/* align-items: center; */
+}
+
+.contactos1{
+  display:inline-block;
+
+}
+
+
+.boton-areaf{
+margin: 10px;
+}
+
+
+
+.boton2{
+  text-transform: uppercase;
+  text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight:bold ;
+    color: #e4aa48;
+    /* border: 2px solid #e4aa48; */
+    width: 90%;
+    height: 50px;
+    line-height: 46px;
+    letter-spacing: .12em;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    transition: all .3s;
+    background: #2e2e35;
+}
+
+.boton2:hover{
+  background: #e4aa48;
+  color: black;
+  transition: all .3s;
+}
+.areas{
+  display: flex;
+  justify-content: center
 }
