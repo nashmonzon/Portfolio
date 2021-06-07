@@ -4,7 +4,7 @@ import { works } from "../profile"
 const Cards = () => {
 
     return (
-        <div className="cardConteiner">
+        <div className="cardConteiner" id="prt">
             <div className="container ">
                 <div className="intro2 primaryColor">
                     <h6 className="subtitulos">porfolio</h6>

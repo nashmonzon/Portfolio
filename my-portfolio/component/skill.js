@@ -6,8 +6,15 @@ const Skill = () => {
     
 
     return (
-        
-        <div className="dad">
+        <div className="skillcontainer">
+        <div className="container" id="skls">
+          <div className="row intro ">
+            <div className=" primaryColor containerMid ">
+              <h6 className="subtitulos">skill</h6>
+              <h2 >Mis habilidades</h2>
+            </div>
+            <div className="skillContainer" >
+            <div className="dad">
             {
                 skills.map(({value, textColor,texto, img},i) => (
                     <div className="primaryColor " key={i}>
@@ -21,6 +28,11 @@ const Skill = () => {
                     </div>
                 ))
             }
+        </div>
+            </div>
+          </div>
+        </div>
+        
         </div>
 
     )

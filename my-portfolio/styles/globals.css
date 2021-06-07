@@ -5,6 +5,7 @@ body {
   font-family:  Ubuntu,  sans-serif;
   background: #2e2e35;
   display: grid;
+ scroll-behavior: smooth;
   
 }
 
@@ -57,6 +58,10 @@ a {
   margin-left: auto;
  text-align: center;
   
+}
+.skillcontainer{
+  padding-top: 50px;
+  margin-bottom: 20px;
 }
 
 .containerTop {
@@ -163,7 +168,7 @@ a {
 .skillContainerC {   
   width: 80px;
   height: 80px;
-  overflow:hidden;
+  /* overflow:hidden; */
  
 } 
 .skillContainer {   
@@ -177,7 +182,8 @@ a {
 }
 
 .dad{
-  display:contents
+  display:contents;
+  text-align: -webkit-center;
 }
 
 /* card */
@@ -303,7 +309,7 @@ padding-top: 50px;
   color: #e4aa48;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 768px){
   .dash{
     width: 70%;
     height: 2px;
@@ -333,10 +339,42 @@ padding-top: 50px;
   .tarjetas{
     overflow: hidden;
   }
+
+  .formulario{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+    height: 50%;
+    color: white
+   
+  }
+
+  .contactos{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    
+    }
+
+    .formularioInt2{
+      height: 50%;
+      width: 50%;
+      display: inline-flex;
+      flex-direction: column;
+      margin: 10px 0 ;
+      color:#e4aa48;
+      font-weight: bold;
+      justify-content: right;
+      padding: 0px 10px;
+      background: #2e2e35;
+    }
   
 } 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width:768px) {
   .card.primaryColor  {
    
     margin-bottom: 20px;
@@ -366,6 +404,39 @@ padding-top: 50px;
   .fullNone{
     display: none
   }
+
+  .formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    height: 50%;
+    color: white;
+    align-items: center;
+   
+  }
+
+  .contactos{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    text-align:center
+    }
+
+    .formularioInt2{
+      height: 50%;
+      width: 100%;
+      display: inline-flex;
+      flex-direction: column;
+      margin: 10px 0 ;
+      color:#e4aa48;
+      font-weight: bold;
+      justify-content: right;
+      padding: 0px 10px;
+      background: #2e2e35;
+    }
 
 }
 
@@ -402,16 +473,7 @@ padding-top: 50px;
 
 /* footer */
 
-.formulario{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: auto;
-  height: 50%;
- 
- color: white
- 
-}
+
 
 .formularioInt{
   height: 50%;
@@ -424,18 +486,7 @@ padding-top: 50px;
   justify-content: right;
 }
 
-.formularioInt2{
-  height: 50%;
-  width: 50%;
-  display: inline-flex;
-  flex-direction: column;
-  margin: 10px 0 ;
-  color:#e4aa48;
-  font-weight: bold;
-  justify-content: right;
-  padding: 0px 10px;
-  background: #2e2e35;
-}
+
 .inputField{
   height: 30px;
 }
@@ -444,16 +495,7 @@ padding-top: 50px;
   height: 70px;
 }
 
-.contactos{
-  width: 50%;
-  height: auto;
-  /* display:grid;
-  grid-template-columns: repeat(2, 50%);
-grid-template-rows: repeat(3, auto); */
-display: flex;
-flex-direction: column;
-/* align-items: center; */
-}
+
 
 .contactos1{
   display:inline-block;
@@ -495,3 +537,16 @@ margin: 10px;
   display: flex;
   justify-content: center
 }
+
+.copyright-text {
+  border-top: 2px solid #e4aa48;
+}
+
+.copyright-text2 {
+  padding: 20px 0px ;
+  margin-bottom: 0;
+  text-align:center;
+  color:#d1d9d9;
+  font-weight: bold;
+}
+

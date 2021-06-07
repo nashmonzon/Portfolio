@@ -35,7 +35,7 @@ export default function Home() {
 
                     </ul>
                     <div className="boton-area">
-                      <a className="boton">contactame</a>
+                      <a className="boton" href="#contact">contactame</a>
                     </div>
                   </div>
                   <div className="col-md-5 foto intro" >
@@ -55,19 +55,12 @@ export default function Home() {
         {/* midapp */}
         <Cards />
         {/* <skillapp> */}
-        <div className="container">
-          <div className="row intro ">
-            <div className=" primaryColor containerMid ">
-              <h6 className="subtitulos">skill</h6>
-              <h2 >Mis habilidades</h2>
-            </div>
-            <div className="skillContainer">
-              <Skill />
-            </div>
-          </div>
-        </div>
+        <Skill/>
         {/* footer */}
         <Footer />
+        <div className="copyright-text ">
+          <p className="copyright-text2">Mil besitos</p>
+        </div>
       </div>
 
 
