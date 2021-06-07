@@ -20,7 +20,7 @@ export default function Home() {
               <div className=" primaryColor  ">
                 <div className="row ">
                   <div className="col-md-3 intro ">
-                    <h1 className="name ">
+                    <h1 className="name">
                       Ignacio
                     </h1>
                     <h1 className="name ">
