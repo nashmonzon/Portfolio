@@ -34,6 +34,7 @@ export const skills = [
         texto: "React",
         img: "iconos/react.png"
     },
+    
 ]
 
 export const works = [
@@ -46,6 +47,12 @@ export const works = [
             {tecnos:"nodeJs"},
             {tecnos:"Javascript"},
             {tecnos:"HTML/CSS"},
+        ],
+        botones:[
+            {btn:"Video",
+            href:"https://github.com/nashmonzon"},
+            {btn:"Codigo",
+            href:"https://github.com/nashmonzon"}
         ]
         
     },
@@ -59,8 +66,17 @@ export const works = [
             {tecnos:"Javascript"},
             {tecnos:"materialUI"},
             {tecnos:"ahiiiii"},
+        ],
+        botones:[
+            {btn:"Galeria",
+            href:"https://github.com/nashmonzon"
+        },
+            {btn:"Codigo",
+            href:"https://github.com/nashmonzon"}
         ]
         
-    }
+    },
+   
+
    
 ]

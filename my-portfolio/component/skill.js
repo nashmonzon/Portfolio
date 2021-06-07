@@ -10,7 +10,7 @@ const Skill = () => {
         <div className="container" id="skls">
           <div className="row intro ">
             <div className=" primaryColor containerMid ">
-              <h6 className="subtitulos">skill</h6>
+              <h6 className="subtitulos">skills</h6>
               <h2 >Mis habilidades</h2>
             </div>
             <div className="skillContainer" >

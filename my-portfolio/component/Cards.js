@@ -1,3 +1,4 @@
+import Link from "next/Link"
 import { works } from "../profile"
 
 
@@ -31,10 +32,26 @@ const Cards = () => {
 
                                 </div>
                                 <div className="post-data">
-                                    <h1 className="title-app">{element.title}</h1>
-                                    <p className="description-app">
-                                        {element.texto}
-                                    </p>
+                                    <div>
+                                        <h1 className="title-app">{element.title}</h1>
+                                        <p className="description-app">
+                                            {element.texto}
+                                        </p>
+                                    </div>
+                                    <div className="btonsCardsArea">
+                                        {
+                                            element.botones?.map((boton, i) => {
+                                                return (
+                                                    <div key={i}>
+                                                        <Link href={boton.href}>
+                                                            <a target="_blank" rel="noopener noreferrer" className="btonsCards">{boton.btn} </a>
+                                                        </Link>
+                                                    </div>
+                                                )
+                                            })
+                                        }
+
+                                    </div>
                                 </div>
                             </div>
 
