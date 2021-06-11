@@ -83,7 +83,7 @@ a {
 .foto{
   text-align: center;
   align-self: flex-end;
-  
+  object-fit: cover;
 }
 
 
@@ -497,6 +497,7 @@ padding-top: 50px;
     display: inline-block;
     cursor: pointer;
     transition: all .3s;
+    background: #2e2e35
 }
 
 .boton:hover{
@@ -584,3 +585,91 @@ margin: 10px;
   font-weight: bold;
 }
 
+/* .fondito{
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.5;
+  min-width: 100vw;
+  min-height: 100vh;
+  
+} */
+.sliderContainer{
+  margin:auto;
+  width: 100px;
+  padding:30px
+}
+
+ul.slider{
+  margin:0;
+  padding:0;
+  list-style: none;
+  width:auto;
+  height:300px;
+  position:relative;
+}
+
+ul.slider li{
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  width:inherit;
+  height:inherit;
+  transition: 0.5s;
+}
+
+ul.slider li img{
+  width: 100%;
+  height:300px;
+  /* object-fit: cover; */
+
+}
+
+ul.slider li:first-child{
+  opacity: 1;
+}
+
+ul.slider li:target{
+  opacity: 1;
+}
+
+.menu {
+  text-align: center;
+  padding: 0;
+}
+
+
+
+.menu li{
+  display:inline-block;
+  text-align: center;
+  background-color: #2e2e35;
+  align-items: center;
+}
+
+.menu li a{
+  display:inline-block;
+  color: #d1d9d9;
+  text-decoration: none;
+  padding:7px;
+  margin: 5px 10px 0px;
+  font-size: 20px;
+  border-radius: 5px;
+  border:2px solid #e4aa48; 
+  background: #2e2e35;
+  transition:all .3s
+}
+
+.menu li a:hover{
+  background: #e4aa48;
+  color: black;
+  transition: all .3s;
+}
+
+.imagenS{
+  background:red
+}

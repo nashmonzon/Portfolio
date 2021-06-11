@@ -11,7 +11,7 @@ const NavBar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse " id="navbarNavAltMarkup">
-                    <div className="navbar-nav navBar ">
+                    <div className="navbar-nav navBar socialMedia  ">
                         <Link href="#prt">
                         <a className="nav-link" >Portfolio</a>
                         </Link>

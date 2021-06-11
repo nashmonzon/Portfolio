@@ -4,16 +4,17 @@ import NavBar from "../component/NavBar";
 import Skill from "../component/skill.js"
 import Cards from "../component/Cards.js"
 import Footer from "../component/Footer"
-
+import ReactPlayer from "react-player"
 
 export default function Home() {
 
 
 
   return (
-    <Layout >
+    <Layout  >
+     
       {/* topapp */}
-      <div>
+      <div className="fondito">
         <div className="container containerTop ">
           <div className="row  ">
             <div className="col-md-12  ">
@@ -54,15 +55,18 @@ export default function Home() {
         </div>
         {/* midapp */}
         <Cards />
+        
+        
         {/* <skillapp> */}
         <Skill/>
         {/* footer */}
         <Footer />
+
         <div className="copyright-text ">
           <p className="copyright-text2">Mil besitos</p>
         </div>
-      </div>
-
+       </div>
+      
 
     </Layout>
 

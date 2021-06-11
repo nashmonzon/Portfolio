@@ -1,8 +1,82 @@
 import Link from "next/Link"
 import { works } from "../profile"
-
+import swal from 'sweetalert2'
 
 const Cards = () => {
+    const mostrarVideo = (boton) => {
+
+
+        swal.fire({
+
+            html: `<h1 >Vesky</h1>
+            <iframe width="100%" height="300" src="${boton.href}" frameborder="0"></iframe>`,
+            background: "#2e2e35",
+            // width: "50%",
+            customClass: {
+                confirmButton: 'boton',
+            },
+            buttonsStyling: false,
+
+        })
+
+
+
+    }
+
+    
+    var sslider = '<div class="container">';
+    sslider += '<div >';
+  sslider += '<ul class="slider">';
+  sslider += '<li id="slide1"> <img class="imagenS" src="montaña.jpg"/>  </li>';
+  sslider +=  '<li id="slide2">  <img src="cat.jpg"/>   </li>';
+  sslider += '<li id="slide3">  <img src="Captura.PNG"/>   </li> '
+  sslider += '</div>';
+  sslider += '<div >';
+  sslider += '<ul class="menu">'
+  sslider += '<li>      <a href="#slide1">1</a>    </li>'
+  sslider +='<li>      <a href="#slide2">2</a>    </li>'
+  sslider +='<li>      <a href="#slide3">3</a>    </li>'
+  sslider += '</ul>'
+  sslider += '</div>';
+  sslider +='</div>'
+  
+ 
+    const mostrarGaleria = (boton) => {
+        console.log(boton.img)
+        var sslider = '<div class="container">';
+    sslider += '<div >';
+  sslider += '<ul class="slider">';
+  sslider += `<li id="slide1"> <img src="${boton.img}"/>  </li>`;
+  sslider +=  '<li id="slide2">  <img src="cat.jpg"/>   </li>';
+  sslider += '<li id="slide3">  <img src="Captura.PNG"/>   </li> '
+  sslider += '</div>';
+  sslider += '<div >';
+  sslider += '<ul class="menu">'
+  sslider += '<li>      <a href="#slide1">1</a>    </li>'
+  sslider +='<li>      <a href="#slide2">2</a>    </li>'
+  sslider +='<li>      <a href="#slide3">3</a>    </li>'
+  sslider += '</ul>'
+  sslider += '</div>';
+  sslider +='</div>'
+  
+        return(
+
+            swal.fire({
+                background: "#2e2e35",
+                html: ""+sslider+"",
+                customClass: {
+                    confirmButton: 'boton',
+                },
+                buttonsStyling: false,
+    
+            })
+        )
+
+
+
+
+
+    }
 
     return (
         <div className="cardConteiner" id="prt">
@@ -17,6 +91,7 @@ const Cards = () => {
 
                         <div className="tarjetas" key={i}>
                             <div className="card primaryColor">
+
                                 <div className="image-data">
                                     <img src={element.img} className="background-image"></img>
                                     <div className="skillUsadas">
@@ -43,9 +118,17 @@ const Cards = () => {
                                             element.botones?.map((boton, i) => {
                                                 return (
                                                     <div key={i}>
-                                                        <Link href={boton.href}>
-                                                            <a target="_blank" rel="noopener noreferrer" className="btonsCards">{boton.btn} </a>
-                                                        </Link>
+                                                        {boton.btn && boton.btn == "Codigo" ?
+
+                                                            <Link href={boton.href}>
+                                                                <a target="_blank" rel="noopener noreferrer" className="btonsCards">{boton.btn} </a>
+                                                            </Link> : boton.btn == "Video" ?
+
+                                                                <a onClick={() => mostrarVideo(boton)} target="_blank" rel="noopener noreferrer" className="btonsCards"> {boton.btn}</a>
+                                                                : boton.btn == "Galeria" ?
+                                                                    <a onClick={() => mostrarGaleria(boton)} target="_blank" rel="noopener noreferrer" className="btonsCards"> {boton.btn}</a>
+                                                                    : {}
+                                                        }
                                                     </div>
                                                 )
                                             })
