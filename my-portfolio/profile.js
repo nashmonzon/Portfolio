@@ -134,7 +134,9 @@ export const works = [
         botones:[
             {btn:"Galeria",
             href:"https://github.com/nashmonzon",
-            img:"cat.jpg"
+            img:[
+                {im:"cat.jpg"}
+            ]
         },
             {btn:"Codigo",
             href:"https://github.com/nashmonzon/HenryLab"}

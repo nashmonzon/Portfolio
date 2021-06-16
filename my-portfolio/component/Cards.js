@@ -1,6 +1,8 @@
 import Link from "next/Link"
 import { works } from "../profile"
 import swal from 'sweetalert2'
+import Model from "./model"
+import { useModal } from "../hooks/useModal"
 
 const Cards = () => {
     const mostrarVideo = (boton) => {
@@ -23,53 +25,38 @@ const Cards = () => {
 
     }
 
-    
-    var sslider = '<div class="container">';
-    sslider += '<div >';
-  sslider += '<ul class="slider">';
-  sslider += '<li id="slide1"> <img class="imagenS" src="montaña.jpg"/>  </li>';
-  sslider +=  '<li id="slide2">  <img src="cat.jpg"/>   </li>';
-  sslider += '<li id="slide3">  <img src="Captura.PNG"/>   </li> '
-  sslider += '</div>';
-  sslider += '<div >';
-  sslider += '<ul class="menu">'
-  sslider += '<li>      <a href="#slide1">1</a>    </li>'
-  sslider +='<li>      <a href="#slide2">2</a>    </li>'
-  sslider +='<li>      <a href="#slide3">3</a>    </li>'
-  sslider += '</ul>'
-  sslider += '</div>';
-  sslider +='</div>'
-  
- 
-    const mostrarGaleria = (boton) => {
-        console.log(boton.img)
-        var sslider = '<div class="container">';
-    sslider += '<div >';
-  sslider += '<ul class="slider">';
-  sslider += `<li id="slide1"> <img src="${boton.img}"/>  </li>`;
-  sslider +=  '<li id="slide2">  <img src="cat.jpg"/>   </li>';
-  sslider += '<li id="slide3">  <img src="Captura.PNG"/>   </li> '
-  sslider += '</div>';
-  sslider += '<div >';
-  sslider += '<ul class="menu">'
-  sslider += '<li>      <a href="#slide1">1</a>    </li>'
-  sslider +='<li>      <a href="#slide2">2</a>    </li>'
-  sslider +='<li>      <a href="#slide3">3</a>    </li>'
-  sslider += '</ul>'
-  sslider += '</div>';
-  sslider +='</div>'
-  
-        return(
 
-            swal.fire({
-                background: "#2e2e35",
-                html: ""+sslider+"",
-                customClass: {
-                    confirmButton: 'boton',
-                },
-                buttonsStyling: false,
+
+
+    const mostrarGaleria = (boton) => {
+        const [isOpenModal1, openModal1 , closeModal1]= useModal(false)
+        return (
+
+            <div className="fonde">
+            <div className="slideCon">
+            
     
-            })
+                <ul className="slider">
+                  <li id="slide1" className="sliderH img-fluid">
+                    <img src="Projects/landing.png" />
+                  </li>
+                  <li id="slide2" className="sliderH">
+                    <img src="Projects/buscador.png" />
+                  </li>
+                  <li id="slide3" className="sliderH">
+                    <img src="Projects/Indice.png" />
+                  </li>
+                </ul>
+              
+                <ul class="menu">
+                  <li>      <a href="#slide1" >1</a>    </li>
+                  <li>      <a href="#slide2" >2</a>    </li>
+                  <li>      <a href="#slide3" >3</a>    </li>
+                </ul>
+              
+            </div>
+          </div>
+       
         )
 
 

@@ -5,6 +5,8 @@ import Skill from "../component/skill.js"
 import Cards from "../component/Cards.js"
 import Footer from "../component/Footer"
 import ReactPlayer from "react-player"
+import Modals from "../component/modals";
+
 
 export default function Home() {
 
@@ -12,9 +14,38 @@ export default function Home() {
 
   return (
     <Layout  >
-     
+      {/* modal */}
+      {/* <div className="fonde">
+        <div className="slideCon">
+        
+
+            <ul className="slider">
+              <li id="slide1" className="sliderH img-fluid">
+                <img src="Projects/landing.png" />
+              </li>
+              <li id="slide2" className="sliderH">
+                <img src="Projects/buscador.png" />
+              </li>
+              <li id="slide3" className="sliderH">
+                <img src="Projects/Indice.png" />
+              </li>
+            </ul>
+          
+            <ul class="menu">
+              <li>      <a href="#slide1" >1</a>    </li>
+              <li>      <a href="#slide2" >2</a>    </li>
+              <li>      <a href="#slide3" >3</a>    </li>
+            </ul>
+          
+        </div>
+      </div> */}
+
+      <Modals/>
+      
       {/* topapp */}
+
       <div className="fondito">
+
         <div className="container containerTop ">
           <div className="row  ">
             <div className="col-md-12  ">
@@ -55,18 +86,18 @@ export default function Home() {
         </div>
         {/* midapp */}
         <Cards />
-        
-        
+
+
         {/* <skillapp> */}
-        <Skill/>
+        <Skill />
         {/* footer */}
         <Footer />
 
         <div className="copyright-text ">
           <p className="copyright-text2">Mil besitos</p>
         </div>
-       </div>
-      
+      </div>
+
 
     </Layout>
 
