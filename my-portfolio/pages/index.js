@@ -40,8 +40,8 @@ export default function Home() {
         </div>
       </div> */}
 
-      <Modals/>
-      
+
+
       {/* topapp */}
 
       <div className="fondito">

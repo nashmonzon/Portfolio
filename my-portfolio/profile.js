@@ -132,10 +132,12 @@ export const works = [
             {tecnos:"ahiiiii"},
         ],
         botones:[
-            {btn:"Galeria",
+            {btn:"Galeria1",
             href:"https://github.com/nashmonzon",
-            img:[
-                {im:"cat.jpg"}
+            veski:[
+                {im:"/cat.jpg"},
+                {im:"/montaña.jpg"},
+                {im:"/adrie.jpg"},
             ]
         },
             {btn:"Codigo",
@@ -155,9 +157,13 @@ export const works = [
             {tecnos:"ahiiiii"},
         ],
         botones:[
-            {btn:"Galeria",
+            {btn:"Galeria2",
             href:"https://github.com/nashmonzon",
-            img:"cat.jpg"
+            casa:[
+                {im:"/cat.jpg"},
+                {im:"/montaña.jpg"},
+                {im:"/cat.jpg"},
+            ]
         },
             {btn:"Codigo",
             href:"https://github.com/nashmonzon/HenryLab"}
