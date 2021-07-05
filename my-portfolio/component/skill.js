@@ -14,10 +14,10 @@ const Skill = () => {
               <h2 >Mis habilidades</h2>
             </div>
             <div className="skillContainer" >
-            <div className="dad">
+            <div className="dad" >
             {
                 skills.map(({value, textColor,texto, img},i) => (
-                    <div className="primaryColor " key={i}>
+                    <div className="primaryColor" data-aos="fade-up" key={i}>
                         <div className="skillContainerC ">
                            <img src={img} className="img-fluid" width="auto" height="auto"></img>
                         </div>

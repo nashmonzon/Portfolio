@@ -3,6 +3,7 @@ import { works } from "../profile"
 import swal from 'sweetalert2'
 import Model from "./model"
 import { useModal } from "../hooks/useModal"
+import ModelCasa from "./modelcasa"
 
 
 
@@ -33,48 +34,7 @@ const Cards = () => {
   const [isOpen1, openModal1, closeModal1] = useModal(false)
   const [isOpen2, openModal2, closeModal2] = useModal(false)
 
-  // console.log(isOpen)
-  // const mostrarFoto = (boton, openModal) => {
-    
-  //   const handleModalClick = e => e.stopPropagation()
-
-  //   return (
-
-  //     <div className={`model ${isOpen && "is-open"}`} onClick={closeModal}>
-  //       <div className="model-container" onClick={handleModalClick}>
-
-  //         {boton.img?.map((img, i) => {
-  //           //  console.log(img)
-  //           return (
-
-  //             <ul className="slider" key={i}>
-  //               <li id="slide1" >
-
-  //                 <img src={img.im} />
-  //               </li>
-
-  //             </ul>
-  //           )
-  //         })
-
-  //         }
-
-
-  //         <ul class="menu">
-  //           <li>      <a href="#slide1" >1</a>    </li>
-  //           <li>      <a href="#slide2" >2</a>    </li>
-  //           <li>      <a href="#slide3" >3</a>    </li>
-  //         </ul>
-
-
-  //         <button onClick={closeModal} className="model-close">x</button>
-
-  //       </div>
-  //     </div>
-  //   )
-
-
-  // }
+  
 
   return (
     <div className="cardConteiner" id="prt">
@@ -88,7 +48,7 @@ const Cards = () => {
           works.map((element, i) => (
 
             <div className="tarjetas" key={i}>
-              <div className="card primaryColor">
+              <div className="card primaryColor" >
 
                 <div className="image-data">
                   <img src={element.img} className="background-image"></img>
@@ -122,23 +82,23 @@ const Cards = () => {
                                 <a target="_blank" rel="noopener noreferrer" className="btonsCards">{boton.btn} </a>
                               </Link> : boton.btn == "Video" ?
 
-                                <a onClick={() => mostrarVideo(boton)} target="_blank" rel="noopener noreferrer" className="btonsCards"> {boton.btn}</a>
+                                <button onClick={() => mostrarVideo(boton)} target="_blank" rel="noopener noreferrer" className="btonsCards"> {boton.btn}</button>
                                 : boton.btn == "Galeria1" ?
                                   <div>
 
-                                    <a onClick={openModal1} target="_blank" rel="noopener noreferrer" className="btonsCards"> {boton.btn}</a>
+                                    <button onClick={openModal1} target="_blank" rel="noopener noreferrer" className="btonsCards"> Galeria</button>
                                     <Model isOpen={isOpen1} closeModal={closeModal1} imagenes={boton.veski}>
                                     </Model>
 
                                   </div>
                                   : boton.btn == "Galeria2" ?
-                                  <div>
+                                    <div>
 
-                                    <a onClick={openModal2} target="_blank" rel="noopener noreferrer" className="btonsCards"> {boton.btn}</a>
-                                    <Model isOpen={isOpen2} closeModal={closeModal2} imagenes={boton.casa}>
-                                    </Model>
+                                      <button onClick={openModal2} target="_blank" rel="noopener noreferrer" className="btonsCards"> Galeria</button>
+                                      <ModelCasa isOpen={isOpen2} closeModal={closeModal2} imagenes1={boton.casa}>
+                                      </ModelCasa>
 
-                                  </div> :{}
+                                    </div> : {}
                             }
                           </div>
                         )

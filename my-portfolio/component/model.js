@@ -1,36 +1,31 @@
-import Image from "next/image"
 
-const Model = ({ children, isOpen, closeModal, imagenes }) => {
+const Model = ({ children, isOpen, closeModal, imagenes, imagenes1 }) => {
   const handleModalClick = e => e.stopPropagation()
+  console.log(imagenes)
 
   return (
-
+    
+   
     <div className={`model ${isOpen && "is-open"}`} onClick={closeModal}>
       <div className="model-container" onClick={handleModalClick}>
         <ul className="slider" >
 
           {imagenes?.map((img, i) => {
-            console.log(img)
+            console.log(i)
             return (
-              <li id={`slide${i}`} key={i}>
+              <li id={`cosa${i}`} key={i}>
                 <img src={img.im} />
               </li>
             )
           })
           }
         </ul>
-        <ul class="menu">
+        <ul className="menu">
          
-              <li>      <a href={`#slide0`} >1</a>    </li>
-              <li>      <a href={`#slide1`} >2</a>    </li>
-              <li>      <a href={`#slide2`} >3</a>    </li>
-              <li>      <a href={`#slide3`} >1</a>    </li>
-              <li>      <a href={`#slide4`} >2</a>    </li>
-              <li>      <a href={`#slide5`} >3</a>    </li>
-
-           
-          
-
+              <li>      <a href={`#cosa0`} >1</a>    </li>
+              <li>      <a href={`#cosa1`} >2</a>    </li>
+              <li>      <a href={`#cosa2`} >3</a>    </li>
+      
         </ul>
 
 

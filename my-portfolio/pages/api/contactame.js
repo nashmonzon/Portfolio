@@ -30,5 +30,5 @@ export default function (req, res) {
     else
       console.log(info)
   })
-  res.status(200)
+  res.send(200)
   }

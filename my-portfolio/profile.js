@@ -97,7 +97,7 @@ export const skills = [
         texto: "Figma",
         img: "iconos/figma.png"
     },
-
+    
     
 ]
 
@@ -135,9 +135,9 @@ export const works = [
             {btn:"Galeria1",
             href:"https://github.com/nashmonzon",
             veski:[
-                {im:"/cat.jpg"},
-                {im:"/montaña.jpg"},
-                {im:"/adrie.jpg"},
+                {im:"/Projects/buscador.png"},
+                {im:"/Projects/Indice.png"},
+                {im:"/Projects/landing.png"},
             ]
         },
             {btn:"Codigo",
@@ -162,7 +162,7 @@ export const works = [
             casa:[
                 {im:"/cat.jpg"},
                 {im:"/montaña.jpg"},
-                {im:"/cat.jpg"},
+                {im:"/adrie.jpg"},
             ]
         },
             {btn:"Codigo",

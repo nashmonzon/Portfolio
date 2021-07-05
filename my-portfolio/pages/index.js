@@ -6,52 +6,32 @@ import Cards from "../component/Cards.js"
 import Footer from "../component/Footer"
 import ReactPlayer from "react-player"
 import Modals from "../component/modals";
+import Model from "../component/model";
+import ModelCasa from "../component/modelcasa";
+import EmblaCarousel from"../component/embla"
+import Link from "next/Link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import the FontAwesomeIcon component
+import { faArrowUp} from "@fortawesome/free-solid-svg-icons"
 
 
 export default function Home() {
 
 
-
   return (
-    <Layout  >
-      {/* modal */}
-      {/* <div className="fonde">
-        <div className="slideCon">
-        
-
-            <ul className="slider">
-              <li id="slide1" className="sliderH img-fluid">
-                <img src="Projects/landing.png" />
-              </li>
-              <li id="slide2" className="sliderH">
-                <img src="Projects/buscador.png" />
-              </li>
-              <li id="slide3" className="sliderH">
-                <img src="Projects/Indice.png" />
-              </li>
-            </ul>
-          
-            <ul class="menu">
-              <li>      <a href="#slide1" >1</a>    </li>
-              <li>      <a href="#slide2" >2</a>    </li>
-              <li>      <a href="#slide3" >3</a>    </li>
-            </ul>
-          
-        </div>
-      </div> */}
-
-
-
+    <Layout  id="top">
+      <Link href="#top">
+      <a className="top-menu" ><FontAwesomeIcon icon={faArrowUp}/></a>
+      </Link>
       {/* topapp */}
-
-      <div className="fondito">
+      <div></div>
+      <div className="fondito" >
 
         <div className="container containerTop ">
           <div className="row  ">
             <div className="col-md-12  ">
               <div className=" primaryColor  ">
                 <div className="row ">
-                  <div className="col-md-3 intro ">
+                  <div className="col-md-3 test intro" data-aos="fade-right">
                     <h1 className="name">
                       Ignacio
                     </h1>
@@ -67,13 +47,13 @@ export default function Home() {
 
                     </ul>
                     <div className="boton-area">
-                      <a className="boton" href="#contact">contactame</a>
+                      <a className="boton" href="#contact">Contactame</a>
                     </div>
                   </div>
-                  <div className="col-md-5 foto intro" >
+                  <div className="col-md-5  foto intro" data-aos="fade-up" >
                     <img src="adrieeee.png" className="img-fluid " />
                   </div>
-                  <div className="col-md-4 intro fullNone">
+                  <div className="col-md-4   intro fullNone" data-aos="fade-left">
                     <h6 className="subtitulos">introduccion</h6>
                     <h2>Full Stack Web</h2>
                     <h2>Developer</h2>
